@@ -1,0 +1,29 @@
+add_library(
+        Payroll_Transaction
+        OBJECT
+        AddComissionEmployeeTransaction.cpp
+        AddEmployeeTransaction.cpp
+        AddHourlyEmployeeTransaction.cpp
+        AddSalariedEmployeeTransaction.cpp
+        AddSaleReceiptTransaction.cpp
+        AddServiceChargeTransaction.cpp
+        AddTimeCardTransaction.cpp
+        ChangeEmployeeAffiliationTransaction.cpp
+        ChangeEmployeeDirectMethodTransaction.cpp
+        ChangeEmployeeEmailTransaction.cpp
+        ChangeEmployeeHoldMethodTransaction.cpp     
+        ChangeEmployeeHourlyTransaction.cpp
+        ChangeEmployeeMailMethodTransaction.cpp
+        ChangeEmployeeMethodTransaction.cpp
+        ChangeEmployeeNameTransaction.cpp
+        ChangeEmployeeNoUnionTransaction.cpp
+        ChangeEmployeePayClassTransaction.cpp
+        ChangeEmployeeTransaction.cpp
+        ChangeEmployeeUnionTransaction.cpp
+        DeleteEmployeeTransaction.cpp
+        PayDayTransaction.cpp
+        )
+
+set(ALL_OBJECT_FILES
+        ${ALL_OBJECT_FILES} $<TARGET_OBJECTS:Payroll_Transaction>
+        PARENT_SCOPE)
